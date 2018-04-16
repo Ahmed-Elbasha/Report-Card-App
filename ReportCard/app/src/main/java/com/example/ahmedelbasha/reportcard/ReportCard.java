@@ -36,6 +36,17 @@ public class ReportCard {
         mFinalGrade = finalGrade;
     }
 
+    public ReportCard() {
+        mStudentName = "";
+        mStudentClass = "";
+        mEnglishGrade = "";
+        mMathGrade = "";
+        mHistoryGrade = "";
+        mBiologyGrade = "";
+        mComputerScienceGrade = "";
+        mFinalGrade = "";
+    }
+
 
     public void setmStudentName(String mStudentName) {
         this.mStudentName = mStudentName;

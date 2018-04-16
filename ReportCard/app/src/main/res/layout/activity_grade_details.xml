@@ -25,7 +25,7 @@
                 android:textAppearance="?android:textAppearanceLarge" />
 
             <TextView
-                android:id="@+id/student_name_user_input"
+                android:id="@+id/student_name_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -47,7 +47,7 @@
                 android:textAppearance="?android:textAppearanceLarge" />
 
             <TextView
-                android:id="@+id/student_class_user_input"
+                android:id="@+id/student_class_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -69,7 +69,7 @@
                 android:textAppearance="?android:textAppearanceLarge" />
 
             <TextView
-                android:id="@+id/english_grade_user_input"
+                android:id="@+id/english_grade_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="85dp"
@@ -91,7 +91,7 @@
                 android:textAppearance="?android:textAppearanceLarge" />
 
             <TextView
-                android:id="@+id/math_grade_user_input"
+                android:id="@+id/math_grade_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="105dp"
@@ -113,7 +113,7 @@
                 android:textAppearance="?android:textAppearanceLarge" />
 
             <TextView
-                android:id="@+id/history_grade_user_input"
+                android:id="@+id/history_grade_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="85dp"
@@ -135,7 +135,7 @@
                 android:textAppearance="?android:textAppearanceLarge" />
 
             <TextView
-                android:id="@+id/biology_grade_user_input"
+                android:id="@+id/biology_grade_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="85dp"
@@ -157,7 +157,7 @@
                 android:textAppearance="?android:textAppearanceLarge" />
 
             <TextView
-                android:id="@+id/computer_science_grade_user_input"
+                android:id="@+id/computer_science_grade_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25dp"
@@ -179,7 +179,7 @@
                 android:textAppearance="?android:textAppearanceLarge" />
 
             <TextView
-                android:id="@+id/final_grade_user_input"
+                android:id="@+id/final_grade_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="47dp"

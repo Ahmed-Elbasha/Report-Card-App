@@ -1,5 +1,6 @@
 package com.example.ahmedelbasha.reportcard;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,12 +17,16 @@ import java.util.ArrayList;
 
 public class AddStudentActivity extends AppCompatActivity {
 
-    private  ArrayList<ReportCard> mReportCards;
+    private  ArrayList<ReportCard> mReportCards = new ArrayList<ReportCard>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_student);
+
+//        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
+//        actionBar.setHomeButtonEnabled(true);
+//        actionBar.setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
@@ -33,8 +38,6 @@ public class AddStudentActivity extends AppCompatActivity {
         commitEditMenuItem.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
-
-                mReportCards = new ArrayList<ReportCard>();
 
                 // References to EditText Views in the layout
                 EditText studentNameUserInput = findViewById(R.id.student_name_user_input);
@@ -76,12 +79,25 @@ public class AddStudentActivity extends AppCompatActivity {
         cancelEditMenuItem.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
-                String message = "Cancel Edit Action is clicked";
-                Toast testToast = Toast.makeText(AddStudentActivity.this, message, Toast.LENGTH_SHORT);
-                testToast.show();
+                Intent navigateBackToMainActivityintent = new Intent(AddStudentActivity.this, MainActivity.class);
+                startActivity(navigateBackToMainActivityintent);
                 return true;
             }
         });
+
+//        MenuItem homeMenuItem = menu.findItem(R.id.showHome);
+//        homeMenuItem.getActionView();
+//        homeMenuItem.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+//            @Override
+//            public boolean onMenuItemClick(MenuItem item) {
+//                try {
+//                    this.finalize();
+//                } catch (Throwable throwable) {
+//                    throwable.printStackTrace();
+//                }
+//                return true;
+//            }
+//        });
         return  true;
     }
 

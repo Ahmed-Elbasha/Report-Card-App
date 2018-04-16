@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".AddStudentActivity" />
         <activity android:name=".GradeDetailsActivity" />
-        <activity android:name=".ModifyStudentGradeActivity"></activity>
+        <activity android:name=".ModifyStudentGradeActivity" />
+        <activity android:name=".ReportCardOptionsActivity"></activity>
     </application>
 
 </manifest>

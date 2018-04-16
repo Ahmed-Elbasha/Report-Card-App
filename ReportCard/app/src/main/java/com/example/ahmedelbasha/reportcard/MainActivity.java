@@ -1,5 +1,6 @@
 package com.example.ahmedelbasha.reportcard;
 
+import android.app.ActionBar;
 import android.app.LauncherActivity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -29,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
        StudentGradeReportCardAdapter studentGradeReportCardAdapter = new StudentGradeReportCardAdapter(this, mReportCards);
         ListView listView = findViewById(R.id.list);
 
+        mReportCards.add(new ReportCard("hghghgh", "hfhfhfhf", "A", "A", "A", "A", "A", "A"));
+
         listView.setAdapter(studentGradeReportCardAdapter);
 
         RelativeLayout noStudentGradeMessage = findViewById(R.id.no_student_grade_message_container);
@@ -43,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 ReportCard currentReportCard = mReportCards.get(position);
+                int currentObjectPosition = position;
+                ReportCardOptionsActivity reportCardOptionsActivity = new ReportCardOptionsActivity();
+                reportCardOptionsActivity.receiveData(mReportCards, currentReportCard, currentObjectPosition);
+                Intent navigateToReportCardOptionsActivityIntent = new Intent(MainActivity.this, ReportCardOptionsActivity.class);
+                startActivity(navigateToReportCardOptionsActivityIntent);
             }
         });
 

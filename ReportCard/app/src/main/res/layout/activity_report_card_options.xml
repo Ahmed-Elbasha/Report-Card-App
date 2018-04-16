@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportCardOptionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:text="Student Name"
+                android:textAppearance="?textAppearanceListItem"
+                android:textStyle="bold"
+                android:id="@+id/student_name_text_view"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:paddingLeft="16dp"
+                android:text="Student Class"
+                android:textAppearance="?textAppearanceListItem"
+                android:textStyle="normal"
+                android:id="@+id/student_class_text_view"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="88dp"
+                android:id="@+id/edit_report_card_button">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:src="@drawable/edit_icon"
+                    android:scaleType="center"
+                    android:id="@+id/edit_icon"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="EDIT"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textStyle="normal"
+                    android:layout_below="@id/edit_icon"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="88dp"
+                android:id="@+id/delete_report_card_button">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:src="@drawable/delete_icon"
+                    android:scaleType="center"
+                    android:id="@+id/delete_icon"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DELETE"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textStyle="normal"
+                    android:layout_below="@id/delete_icon"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="88dp"
+                android:id="@+id/show_report_card_button">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:src="@drawable/show_icon"
+                    android:scaleType="center"
+                    android:id="@+id/show_icon"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Show"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textStyle="normal"
+                    android:layout_below="@id/show_icon"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
