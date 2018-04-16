@@ -16,10 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AddStudentActivity" />
-        <activity android:name=".GradeDetailsActivity" />
-        <activity android:name=".ModifyStudentGradeActivity" />
-        <activity android:name=".ReportCardOptionsActivity"></activity>
+        <activity
+            android:name=".AddStudentActivity"
+            android:label="Add Student Grade Report"/>
+        <activity
+            android:name=".GradeDetailsActivity"
+            android:label="Student Grade Report Card"/>
+        <activity
+            android:name=".ModifyStudentGradeActivity"
+            android:label="Modify Student Grade Report"/>
+        <activity
+            android:name=".ReportCardOptionsActivity"
+            android:label="Student Grade Report Options"></activity>
     </application>
 
 </manifest>
