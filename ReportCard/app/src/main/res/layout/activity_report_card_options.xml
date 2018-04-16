@@ -52,6 +52,11 @@
                 android:layout_height="88dp"
                 android:id="@+id/edit_report_card_button">
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"/>
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -77,6 +82,12 @@
                 android:layout_height="88dp"
                 android:id="@+id/delete_report_card_button">
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -101,6 +112,12 @@
                 android:layout_weight="1"
                 android:layout_height="88dp"
                 android:id="@+id/show_report_card_button">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"/>
+
 
                 <ImageView
                     android:layout_width="match_parent"
